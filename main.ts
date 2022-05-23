@@ -14,7 +14,7 @@ basic.forever(function () {
         . # # # .
         . . # . .
         `)
-    for (let index = 0; index < 9; index++) {
+    for (let index = 0; index < 999999; index++) {
         mimic.push(input.soundLevel())
     }
     basic.showLeds(`
@@ -24,7 +24,7 @@ basic.forever(function () {
         # . . . #
         . # # # .
         `)
-    for (let index = 0; index < 10; index++) {
+    for (let index = 0; index < 10000000; index++) {
         let list: number[] = []
         if (list[mimicsoundvar] == 2) {
             music.playTone(262, music.beat(BeatFraction.Whole))
@@ -55,5 +55,5 @@ basic.forever(function () {
         }
         mimicsoundvar += 1
     }
-    mimicsoundvar = 0
+    mimicsoundvar = 1
 })
